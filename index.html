@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTON</title>
+</head>
+<body>
+    <button id="redbutton" onclick="redcolor()">RED BUTTON</button>
+    <button id="bluebutton" onclick="bluecolor()">BLUE BUTTON</button>
+    <button id="greenbutton" onclick="greencolor()">GREEN BUTTON</button>
+    <button id="resetbutton" onclick="reset()">RESET BUTTON</button>
+    <script>
+        function redcolor() {
+            document.getElementById("redbutton").style.backgroundColor = "red";
+        }
+        
+        function bluecolor() {
+            document.getElementById("bluebutton").style.backgroundColor = "blue";
+        }
+        
+        function greencolor() {
+            document.getElementById("greenbutton").style.backgroundColor = "green";
+        }
+        function reset()
+        {
+            document.getElementById("redbutton").style.backgroundColor = "";
+            document.getElementById("bluebutton").style.backgroundColor = "";
+            document.getElementById("greenbutton").style.backgroundColor = "";
+            document.getElementById("resetbutton").style.backgroundColor = "";
+        }
+        
+    </script>
+</body>
